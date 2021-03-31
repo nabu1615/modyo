@@ -1,0 +1,13 @@
+@import "../../styles/vars";
+@import "../../styles/functions";
+
+.icon {
+    width: rem(30px);
+    height: rem(30px);
+    margin-right: rem(10px);
+    padding: rem(10px);
+    display: inline-block;
+    background-color: color('green-100');
+    color: color('white');
+    border-radius: 100%;
+}

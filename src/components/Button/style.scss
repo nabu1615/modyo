@@ -1,0 +1,41 @@
+@import "../../styles/vars";
+@import "../../styles/functions";
+
+.button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  font-weight: 500;
+  padding: rem(12px) rem(32px);
+  font-size: $base-font-size;
+  font-family: $main-font;
+
+  &--primary {
+    background-color: color("green-100");
+    border-radius: rem(20px);
+    color: color("white");
+
+    &:hover {
+      background-color: color("green-200");
+    }
+  }
+
+  &--secondary {
+    background-color: color("blue-100");
+    border-radius: rem(20px);
+    color: color("white");
+
+    &:hover {
+      background-color: color("blue-200");
+    }
+  }
+
+  &--inline {
+      padding: 0;
+      color: color('green-100');
+
+      &:hover {
+        color: color('green-200');
+      }
+  }
+}
