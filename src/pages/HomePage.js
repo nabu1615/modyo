@@ -1,10 +1,18 @@
 import React from "react";
 
+import Header from "../containers/Header/Header";
+import Hero from "../containers/Hero/Hero";
+import Features from "../containers/Features/Features";
+import Prototypes from "../containers/Prototypes/Prototypes";
+
 const HomePage = () => {
   return (
-    <div>
-      assaa
-    </div>
+    <main>
+      <Header />
+      <Hero />
+      <Features />
+      <Prototypes />
+    </main>
   )
 }
 

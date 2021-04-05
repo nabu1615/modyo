@@ -1,0 +1,19 @@
+@import "../../styles/vars";
+@import "../../styles/functions";
+
+.list {
+  font-family: $main-font;
+  padding: 0;
+
+  &__item {
+    align-items: center;
+    display: flex;
+    list-style: none;
+
+    svg {
+      color: color("green-100");
+      margin-right: rem(8px);
+      width: rem(22px);
+    }
+  }
+}

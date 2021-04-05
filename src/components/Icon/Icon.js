@@ -8,11 +8,13 @@ import {
   CollectionIcon,
   ClockIcon,
   EmojiHappyIcon,
-  TrendingUpIcon
+  TrendingUpIcon,
+  MenuIcon,
+  XIcon
 } from "@heroicons/react/outline";
 import "./style.scss";
 
-const Icon = ({ icon }) => {
+const Icon = ({ icon, className }) => {
   const iconMap = {
     beaker: <BeakerIcon />,
     refresh: <RefreshIcon />,
@@ -20,10 +22,12 @@ const Icon = ({ icon }) => {
     collection: <CollectionIcon />,
     clock: <ClockIcon />,
     happy: <EmojiHappyIcon />,
-    trending: <TrendingUpIcon />
+    trending: <TrendingUpIcon />,
+    ham: <MenuIcon />,
+    close: <XIcon />
   };
 
-  return <div className="icon">{iconMap[icon]}</div>;
+  return <div className={`icon ${className ? className : ''}`}>{iconMap[icon]}</div>;
 };
 
 Icon.propTypes = {
@@ -31,7 +35,7 @@ Icon.propTypes = {
 };
 
 Icon.defaultProps = {
-  icon: "beaker",
+  icon: "beaker"
 };
 
 export default Icon;

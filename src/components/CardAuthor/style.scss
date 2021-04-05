@@ -1,0 +1,38 @@
+@import "../../styles/vars";
+@import "../../styles/functions";
+
+.card-author {
+  border-radius: rem(10px);
+  border: rem(1px) solid color("white");
+  box-shadow: 0 rem(6px) rem(14px) rem(-2px) rgba(0, 0, 0, 0.1);
+  font-family: $main-font;
+  padding: rem(20px);
+
+  &__image {
+    border-radius: 100%;
+    width: rem(55px);
+  }
+
+  &__header {
+    display: flex;
+  }
+
+  &__info {
+    padding-left: rem(20px);
+    align-items: center;
+
+    & * {
+      display: block;
+    }
+  }
+
+  &__name {
+      margin-bottom: rem(10px);
+  }
+
+  &__body {
+      font-style: italic;
+      margin-top: rem(30px);
+      margin-bottom: 0;
+  }
+}

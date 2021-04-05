@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.scss";
 
-const Body = ({ children }) => {
+const Body = ({ children, className='' }) => {
     return (
-        <p className="body">{children}</p>
+        <p className={`body ${className}`}>{children}</p>
     )
 }
 

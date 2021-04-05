@@ -1,4 +1,4 @@
-###  Default Button 
+###  Default and Primary Button
 
 ```js 
 <Button> Primary </Button>

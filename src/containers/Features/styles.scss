@@ -1,0 +1,37 @@
+@import "../../styles/vars";
+@import "../../styles/functions";
+
+.features {
+  background-color: color("grey-400");
+  margin: rem(38px) 0;
+  padding: rem(60px) 0;
+
+  @media only screen and (min-width: rem(760px)) {
+    padding: rem(120px) 0;
+  }
+
+  &__title {
+    grid-column: 1/-1;
+    margin-bottom: rem(32px);
+    margin-top: 0;
+    text-align: center;
+
+    @media only screen and (min-width: rem(760px)) {
+      margin-bottom: rem(64px);
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-column: 1/-1;
+    grid-gap: rem(30px);
+
+    @media only screen and (min-width: rem(760px)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (min-width: rem(1028px)) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
