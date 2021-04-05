@@ -1,4 +1,28 @@
-.text-styling{
+@import "../../styles/vars";
+@import "../../styles/functions";
 
-    font-size:1.6rem;
+.card {
+  $self: &;
+
+  background-color: color("white");
+  border-radius: rem(10px);
+  padding: rem(35px);
+
+  &:hover {
+    background-color: color("green-100");
+
+    #{$self}__title,
+    #{$self}__body,
+    .button {
+      color: color("white");
+    }
+
+    .icon {
+      background-color: color("white");
+
+      svg {
+        color: color("green-100");
+      }
+    }
+  }
 }

@@ -1,0 +1,19 @@
+.text--main {
+  color: color("green-100");
+}
+
+.hide {
+  display: none;
+}
+
+.grid,
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.grid {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-column-gap: 2.19%;
+  display: grid;
+}

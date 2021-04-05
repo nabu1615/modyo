@@ -1,0 +1,51 @@
+@import "../../styles/vars";
+@import "../../styles/functions";
+
+.about {
+  background-color: color("grey-400");
+  padding: rem(60px) rem(20px);
+
+  &__title {
+    grid-column: 1/ -1;
+    text-align: center;
+    margin-bottom: rem(40px);
+  }
+
+  &__subtitle {
+    @media only screen and (min-width: rem(760px)) {
+      margin-top: 0;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    box-shadow: 0 rem(8px) (16px) rgba(0, 0, 0, 0.15);
+    border-radius: rem(10px);
+  }
+
+  &__info,
+  &__image {
+    grid-column: 1/ -1;
+
+    @media only screen and (min-width: rem(760px)) {
+      margin: rem(40px) 0;
+    }
+  }
+
+  &__image {
+    @media only screen and (min-width: rem(760px)) {
+      grid-column: 1/6;
+    }
+  }
+
+  &__info {
+    @media only screen and (min-width: rem(760px)) {
+      grid-column: 7/13;
+      margin: auto;
+    }
+
+    @media only screen and (min-width: rem(1024px)) {
+      grid-column: 8/13;
+    }
+  }
+}

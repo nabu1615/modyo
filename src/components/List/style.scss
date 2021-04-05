@@ -1,0 +1,22 @@
+@import "../../styles/vars";
+@import "../../styles/functions";
+
+.list {
+  font-family: $main-font;
+  padding: 0;
+  margin-top: rem(30px);
+
+  &__item {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    color: color("grey-200");
+    margin: rem(10px) 0;
+
+    svg {
+      color: color("green-100");
+      margin-right: rem(8px);
+      width: rem(22px);
+    }
+  }
+}

@@ -1,5 +1,6 @@
 @import "vars";
 @import "functions";
+@import "common";
 
 * {
   box-sizing: border-box;
@@ -8,4 +9,5 @@
 body {
   font-family: $main-font;
   font-size: $base-font-size;
+  margin: 0;
 }

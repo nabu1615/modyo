@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 
 import "./style.scss";
 
-const Button = ({children, type}) => {
+const Button = ({children, type, className}) => {
   const typeButton = `button--${type}`;
 
-  return <button className={`button ${typeButton}`}>{children}</button>;
+  return <button className={`button ${typeButton} ${className}`}>{children}</button>;
 };
 
 Button.propTypes = {
@@ -14,6 +14,7 @@ Button.propTypes = {
    * Background Color
    */
   type: PropTypes.string,
+  className: PropTypes.string,
 
   /**
    * Id of button need to pass to link
@@ -23,6 +24,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   type: "primary",
+  className: ''
 };
 
 export default Button;
