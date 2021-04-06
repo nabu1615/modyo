@@ -15,7 +15,7 @@ const HomePage = () => {
       <Prototypes />
       <About />
     </main>
-  )
-}
+  );
+};
 
 export default HomePage;
